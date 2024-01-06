@@ -35,8 +35,8 @@ div{
     width: 200px;
  
     margin-top: 0%;
-   
-   
+   color: black;
+   text-align: center;
    position: absolute;
     top: 90px;
     right: 20px;
@@ -67,4 +67,9 @@ div{
 header{
     position: relative;
     z-index: 1;
+   background-color: lightgrey;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
