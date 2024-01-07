@@ -32,10 +32,19 @@ div{
     color: black;
     display: flex;
     margin-top: 20px;
+    
 }
-@media screen and (min-width:580px){
-   
+@media only screen and (max-width:400px){
+    .nav .a{
+        font-size: 12px;
+    }
 }
+@media only screen and (max-width:350px){
+    .nav .a{
+       margin-left: 10px;
+    }
+}
+
 /*.menu-bar{
     height: 600px;
     background-color: black;
@@ -106,6 +115,7 @@ body{
     color: #ffffff;
     backdrop-filter: blur(4px);
     width: 50%;
+    font-weight: 100;
    
 }
 .get-started{
