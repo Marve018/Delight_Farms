@@ -64,3 +64,4 @@ Integrate analytics tools to track user behavior and website performance.
 Include clear terms of service and privacy policy pages.
 Remember to break down these features into manageable tasks and prioritize based on your project's scope. This project offers a great opportunity to showcase your skills and create a valuable resource for both customers and experts in the agricultural field. Good luck with your Delight Farms website!
 
+databases
