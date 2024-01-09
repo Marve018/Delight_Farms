@@ -1,0 +1,52 @@
+body{
+    background: url('images/Cutting.jpeg');
+    height: 100%;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+
+}
+.login-form{
+    height: 450px;
+    width:400px ;
+    text-align: center;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.login-input{
+    width: 80%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-size: 20px;
+    background-color: transparent;
+}
+.btn1{
+    width: 80%;
+    height: 40px;
+    margin-top: 20px;
+    background: #1b5e1b;
+    border: none;
+    border-radius: 5px;
+}
+.label{
+    font-weight: 400;
+}
+#image{
+    display: none;
+    height: 30px;
+    width: 50px;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
