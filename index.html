@@ -14,6 +14,7 @@
         <div><img src="images\main_logo.png" class="logo">
           <nav class="nav">
             <a href="login.html" class="a" >Login</a>
+            <a href="signup.html" class="a">Signup</a>
             <a href="" class="a">Contact</a>
             <a href="" class="a">About Us</a>
             
@@ -23,11 +24,14 @@
                     </span></a>
           </nav>
           <div class="div"><div class="menu-bar" id="menubar">
-            <a href="login.html" class="menu-e" >login</a><br><br>
-            <a href="" class="menu-e" >signup</a>
-            <br><br> <a href="" class="menu-e">contact</a>
-            <br><br> <a href="" class="menu-e">product</a>
-        <br><br><a href=""  class="menu-e">about us</a>
+            <span type="button" id="btn" onclick="closenav()">
+                &times;
+            </span>
+            <a href="login.html" class="menu-e" >login</a>
+            <a href="signup.html" class="menu-e" >signup</a>
+             <a href="" class="menu-e">contact</a>
+             <a href="" class="menu-e">product</a>
+        <a href=""  class="menu-e">about us</a>
            
     </div>
     
@@ -68,7 +72,7 @@
          <br> and magic of turmeric and ginger.
     </p></div>
    
-    <div class="get-started"><button class="btn1"><b>GET STARTED</b></button>
+    <div class="get-started"><button class="btn1" onclick="login()" ><b>GET STARTED</b></button>
         <button class="btn2"><b>LEARN MORE</b></button></div>
     
 </body>
