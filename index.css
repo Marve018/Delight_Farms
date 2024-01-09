@@ -42,6 +42,7 @@ div{
     }
     .menu-bar{
         display: none;
+        
     }
 }
 @media screen and (min-width:600px){
@@ -50,6 +51,7 @@ div{
     }
     .menu-bar{
         display: none;
+        visibility: hidden;
     }
 }
 .menu-bar{
