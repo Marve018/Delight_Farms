@@ -1,5 +1,5 @@
 body {
-    background: url('images/Cutting.jpeg');
+    background: url(images/Cutting.jpeg);
     height: 100%;
     background-position: center;
     background-size: cover;
@@ -12,6 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    
 }
 
 .signup-form {

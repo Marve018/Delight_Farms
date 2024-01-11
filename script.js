@@ -1,16 +1,14 @@
 
 function menubar(){
-   var when=document.getElementById('menubar')
-  if(when.style.display==='block'){
-    document.getElementById('menubar').style.display='none'
-  }
-  else{
-    document.getElementById('menubar').style.display='block'
-  }
+   var when=document.getElementById('menubar').style.width='50%'
   
+  document.getElementById('body').style.backgroundColor='rgba(0,0,0,0.7)'
+  document.getElementById('visi').style.visibility='hidden'
 }
 
 function closenav(){
   var wen=document.getElementById('menubar')
-  wen.style.display='none'
+  wen.style.width='0%'
+  document.getElementById('body').style.backgroundColor='transparent'
+  document.getElementById('visi').style.visibility='visible'
 }
