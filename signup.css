@@ -12,6 +12,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
     
 }
 
@@ -35,7 +37,12 @@ body {
     font-size: 16px;
     background-color: transparent;
 }
-
+.material-symbols-outlined{
+    display: flex;
+    z-index: 2;
+    margin: 0%;
+    right: auto;
+}
 .signup-input:focus {
     border-bottom: 2px solid #1b5e1b;
 }
@@ -63,8 +70,8 @@ body {
     text-align: center;
 }
 
-.arrow {
-    display: flex;
+.arrow{
+    
     color: black;
     font-size: 40px;
     text-decoration: none;
@@ -72,13 +79,14 @@ body {
     top: 0;
     left: 0;
     margin: 20px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    padding: 5px;
+    box-shadow:
+     2px 2px 4px 
+      rgba(0, 0, 0, 0.5);
+   text-align: center;
     background: rgba(255, 255, 255, 0.9);
-    font-weight: bolder;
+    width: 50px;
     border-radius: 10px;
 }
-
 @media screen and (max-width: 500px) {
     .signup-form {
         width: 90%;

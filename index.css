@@ -23,7 +23,7 @@ div{
     margin-right: 20px;
 }
 .nav .a{
-   
+   border:1px solid white;
     text-decoration: none;
     color: black;
     display: flex;
@@ -33,13 +33,32 @@ div{
     font-weight: 300;
     text-transform: uppercase;
     transition: text-decoration 1s ease ;
+    padding-top: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
 }
-.nav .a:hover{
-    text-decoration: underline red 3px;
-    
-}
+.nav .ab{
+    border:1px solid white;
+     text-decoration: none;
+     color: white;
+     display: flex;
+     margin-top: 14px;
+     margin-left: 40px;
+     justify-content: space-between;
+     font-weight: 300;
+     text-transform: uppercase;
+     transition: text-decoration 1s ease ;
+     padding: 10px;
+     border-radius: 10px;
+     
+ }
 @media screen and (max-width:650px){
     .nav .a{
+        display: none;
+    }
+    .nav .ab{
         display: none;
     }
     .login{
@@ -70,15 +89,17 @@ div{
    position: fixed;
     overflow-y: hidden;
     text-decoration: none;
-    margin-right: 0%;
+   
     width: 0%;
     right: 0;
     top: 0;
+    bottom:0;
     background-color:#f3f3f3;
     z-index: 2;
     box-shadow: 6px 4px 20px;
     display: block;
-    height: 104vh;
+    height: 650px;
+    margin:0;
 }
 
 .menu {
@@ -107,11 +128,10 @@ div{
 header{
     position: relative;
     z-index: 1;
-   margin-top: 0;
-   background-color: #ffffff;
-   border-radius: 30px;
+   margin-top: 0px;
+   background: none;
+   
    padding: 10px;
-   backdrop-filter: blur(5px);
    display: flex;
    justify-content: space-between;
    text-align: center;
@@ -119,13 +139,15 @@ header{
 }
 body{
   background-image: url('images/Cutting.jpeg');
-  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
   background-position:center;
   background-size: cover;
   background-repeat: no-repeat;
   font-family: 'Arial', sans-serif;
   transition: background-color 3s;
   margin:0%;
+  padding: 0%;
+  background-blend-mode: multiply;
 }
 
 .text{
@@ -141,7 +163,7 @@ body{
 .get-started{
     margin: auto;
     display: block;
-    
+    margin-top: 100px;
 }
 .btn1{
     border-radius: 10px;
