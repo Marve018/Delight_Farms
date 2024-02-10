@@ -8,9 +8,10 @@ function button(){
    
    messageElement.textContent = `User ${email} signed up successfully!`;
    document.getElementById('image').style.display='block'
-    setTimeout(function () {
+   
+   setTimeout(function () {
      window.location.href = "index.html"; // Replace with your actual index page URL
- }, 2000);
+ },3000);
  }
  
  
@@ -28,6 +29,9 @@ function validateForm() {
 
     // Additional validation logic can be added here
 
-    return true;
+    else{// Replace with your actual index page URL
+        
+      return true;
+    }
 }
 
