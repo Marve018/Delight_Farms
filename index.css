@@ -39,6 +39,9 @@ div{
     padding:18px;
    
 }
+.nav .a:focus{
+    border: 1px solid black;
+}
 .nav .ab{
     border:1px solid white;
      text-decoration: none;

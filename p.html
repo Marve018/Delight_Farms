@@ -5,16 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    img{
-      height: 100px;
-      width: 100px;
-      border-radius: 50%;
+    button{
+      color:blue;
+      border: 10px solid transparent;
+      font-size: 50px;
+      transition: border-image 1s ease-in-out repeat;
+      border-image: linear-gradient(to left,blue,transparent) 10 round;
+      transition-duration:5s ;
+      
     }
+    button:hover{
+      color: blue;
+      animation-name:name;
+      animation-duration: 20s;
+      
+    }
+    *{
+      background-color: black;
+    }
+    @keyframes name{ 
+      0%{border-image:linear-gradient(to right,blue,transparent) 10 round  }
+      25%{  border-image: linear-gradient(to left,blue,transparent) 10 round }
+   }
   </style>
 </head>
 
 <body>
-  <div>
+  <button>textarea</button>
+  <!-- div>
     <img src="https://drive.google.com/file/d/1Vsc_uqg0Ufc2XOiUtveYHLsyhM-2-5Q3/view?usp=drive_link" id="image">
     <input type="file" value="edit-profile" id="change" onclick="change()">
     <button type="button" onselect="remove()">remove</button>
@@ -26,7 +44,6 @@
       when.innerHTML=wen
     }
   </script>
-  <input type="file" capture="user" accept="video/*">
+  <input type="file" capture="user" accept="video/*"> -->
 </body>
 </html>
-<link rel="stylesheet" href="style.css">
