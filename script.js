@@ -12,3 +12,16 @@ function closenav(){
   
   document.getElementById('visi').style.visibility='visible'
 }
+
+
+function btnlog(){
+  
+    window.location.href = "login.html";
+   
+}
+function btnsign(){
+ 
+  
+   window.location.href = "signup.html";
+  
+}

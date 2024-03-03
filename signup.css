@@ -61,6 +61,7 @@ body {
 
 .btn1:hover {
     background: #149414;
+    transform: scale(1.1);
 }
 
 .label {

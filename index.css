@@ -17,50 +17,53 @@ div{
 }
 .nav{
     list-style-type: none;
-    display: flex;
     position: absolute;
     right: 0;
     margin-right: 20px;
+    display: flex;
 }
 .nav .a{
    border:1px solid white;
     text-decoration: none;
     color: black;
-    display: flex;
     margin-top: 14px;
     margin-left: 40px;
     justify-content: space-between;
     font-weight: 300;
     text-transform: uppercase;
     transition: text-decoration 1s ease ;
-    
     border-radius: 5px;
     background-color: #ffffff;
-    padding:18px;
+   height: 50px;
+   width: 100px;
    
 }
-.nav .a:focus{
+.nav .a:hover,.nav .ab:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+.nav .a:focus,.nav .ab:focus{
     border: 1px solid black;
+    
 }
 .nav .ab{
     border:1px solid white;
      text-decoration: none;
      color: white;
-     display: flex;
+     background: transparent;
      margin-top: 14px;
      margin-left: 40px;
      justify-content: space-between;
      font-weight: 300;
      text-transform: uppercase;
      transition: text-decoration 1s ease ;
-     padding: 15px;
+     height: 50px;
+   width: 100px;
      border-radius: 5px;
      backdrop-filter: blur(2px);
      
  }
- .nav .ab:focus{
-     border: 1px solid black;
- }
+ 
 @media screen and (max-width:650px){
     .nav .a{
         display: none;
@@ -250,4 +253,62 @@ b{
     display: flex;
     padding: 12px;
     cursor: pointer;
+}
+
+/* Header animation */
+header {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-timeline: view();
+     animation-range: 250px 500px; 
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+/* Button hover effects */
+.btn1:hover, .btn2:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Background animation */
+body {
+    animation: fadeInBackground 2s forwards;
+}
+
+@keyframes fadeInBackground {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+@keyframes slideInFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.intro, .get-started {
+    animation: slideInFromBottom 1s forwards;
+    animation-timeline: view();
+    animation-range: entry;
 }
